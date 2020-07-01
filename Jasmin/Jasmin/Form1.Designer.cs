@@ -91,12 +91,14 @@
             this.Controls.Add(this.btnSend);
             this.Name = "Form1";
             this.Text = "Form1";
-            this.Load += new System.EventHandler(this.Form1_Load);
+            this.Load += new System.EventHandler(this.Form1_LoadAsync);
+            this.Disposed += Form1_Disposed;
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
+       
         #endregion
 
         private System.Windows.Forms.Button btnSend;
